@@ -27,6 +27,12 @@
   text-align: center;
 }
 
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
 .svg {
   top: 0;
   position: absolute;
@@ -34,4 +40,5 @@
   overflow: visible;
   pointer-events: none;
   z-index: 2;
+  animation: float 6s ease-in-out infinite;
 }

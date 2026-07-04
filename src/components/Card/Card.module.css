@@ -37,8 +37,15 @@ body[data-color-scheme=light] .card:active::before {
 }
 
 .card, .card * {
-  transition: all .25s;
+  transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.card:active {
+  transform: scale(0.96) translateY(2px);
 }
 .card > * {
   width: 100%;

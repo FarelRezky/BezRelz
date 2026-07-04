@@ -50,6 +50,11 @@
 /* //! */
 .suggestion > div {
   border: 5px solid transparent;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.suggestion:hover > div {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .suggestion.selected > div {
   border: 5px solid var(--primary);

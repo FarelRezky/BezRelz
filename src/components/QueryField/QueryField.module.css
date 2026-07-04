@@ -32,4 +32,9 @@
   text-transform: uppercase;
   font-family: inherit;
   cursor: default;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+.field:focus {
+  text-shadow: 0 0 8px var(--query);
+  transform: scale(1.02);
 }
