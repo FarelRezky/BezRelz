@@ -1,7 +1,7 @@
 # BezRelz [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE.md) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 <p align=center>
-  <img width="80%" src="https://imgur.com/7hz5arm">
+  <img width="80%" src="https://i.imgur.com/7hz5arm.jpeg">
 </p>
 
 <p align=center>
