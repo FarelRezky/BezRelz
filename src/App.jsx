@@ -6,6 +6,7 @@ import ActiveElements from './components/ActiveElements/ActiveElements'
 import QueryField from './components/QueryField/QueryField'
 import Settings from './components/Settings/Settings'
 import LayoutButton from './components/LayoutButton/LayoutButton'
+import SplashScreen from './components/SplashScreen/SplashScreen'
 import { BsGearFill, BsChevronRight } from 'react-icons/bs'
 import { RiMenu5Fill } from 'react-icons/ri'
 import { allowedModes } from './rules'
@@ -33,6 +34,16 @@ function App() {
 
   const [showSettings, setShowSettings] = useState(false)
   const [showReset, setShowReset] = useState(false)
+  const [showSplash, setShowSplash] = useState(() => {
+    // Only show splash once per session
+    const hasSeenSplash = sessionStorage.getItem('hasSeenSplash')
+    return !hasSeenSplash
+  })
+
+  const handleSplashComplete = () => {
+    sessionStorage.setItem('hasSeenSplash', 'true')
+    setShowSplash(false)
+  }
 
   /* handlers */
   const onContextMenuRef = useRef(null)
@@ -118,7 +129,17 @@ function App() {
         !isMobile || ignoreMobile
           ? <AnimatePresence>
               {
-                showSettings
+                showSplash ? (
+                  <motion.div
+                    key="splash"
+                    initial={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    style={{ position: 'absolute', zIndex: 9999, width: '100%', height: '100%' }}
+                  >
+                    <SplashScreen onComplete={handleSplashComplete} />
+                  </motion.div>
+                ) : showSettings
                   ? <Settings key='settings' onClose={() => {
                     setShowSettings(false) 
                     resetStore()}}/>

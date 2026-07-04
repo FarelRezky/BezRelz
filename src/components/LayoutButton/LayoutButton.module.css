@@ -6,7 +6,7 @@
   transition: all .3s;
 }
 .container.visited {
-  opacity: 0;
+  opacity: 1;
 }
 .container.visited:hover {
   opacity: 1;
