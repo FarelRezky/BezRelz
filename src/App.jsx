@@ -48,13 +48,13 @@ function App() {
 
   onKeyUpRef.current = e => {
     if (e.key === 'Shift')
-      if (allowedModes.get('Chevron').has(mode))
+      if (allowedModes.get('BezRelz').has(mode))
         if (mode === 'opened')
           updateStore({ mode: 'default' })
   }
   onKeyDownRef.current = e => {
     if (e.key === 'Shift')
-        if (allowedModes.get('Chevron').has(mode))
+        if (allowedModes.get('BezRelz').has(mode))
           if (mode === 'default')
             updateStore({ mode: 'opened' })
   }

@@ -6,8 +6,8 @@ const { log } = require('console')
 
 // Create a new service object
 const svc = new Service({
-  name:'Chevron',
-  description: 'Backend server of the Chevron startpage',
+  name:'BezRelz',
+  description: 'Backend server of the BezRelz startpage',
   script: require('path').join(__dirname, 'server.cjs'),
   nodeOptions: [
     '--harmony',

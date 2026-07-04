@@ -62,7 +62,7 @@ function MacrosMenu({ visibility, fullVisibility }) {
   // hotkeys listener
   useEffect(() => {
     const handleKeypress = e => {
-      if (!allowedModes.get('Chevron').has(mode)) return
+      if (!allowedModes.get('BezRelz').has(mode)) return
 
       if (e.shiftKey) {
         for (const macro of pinnedMacros) {

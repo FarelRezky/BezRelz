@@ -17,7 +17,7 @@ const allowedModes = new Map([
     'default', 
     'searching'
   ])],
-  ['Chevron', new Set([
+  ['BezRelz', new Set([
     'default',
     'opened'
   ])],

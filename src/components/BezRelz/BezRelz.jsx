@@ -7,7 +7,7 @@ import MacrosMenu from '../MacrosMenu/MacrosMenu'
 import { motion, useAnimationControls } from 'framer-motion'
 import { easeInOutQuad, easeInQuad, easeOutCubic, easeOutQuad } from '../../functions/animUtils/easings'
 import dC from '../../functions/generationUtils/dCommandToString'
-import classes from './Chevron.module.css'
+import classes from './BezRelz.module.css'
 
 /* 
 animations:
@@ -31,16 +31,16 @@ const smoothing = .1
 // multiplier of stretching the svg element in "opened" mode
 const stretchMultiplier = 8
 
-function Chevron({ visibility, onAnimationEnd }) {
+function BezRelz({ visibility, onAnimationEnd }) {
   // settings
   const settings = useContext(SettingsContext)
   // theme
   const theme = useContext(ThemeContext)
   
   const duration = settings.general.animationSpeed / 1000
-  const thickness = settings.chevron.thickness
-  const color = theme.chevron
-  const size = settings.chevron.size / 100
+  const thickness = settings.bezrelz.thickness
+  const color = theme.bezrelz
+  const size = settings.bezrelz.size / 100
 
   // mode
   const mode = useStateSelector(store => store.mode)
@@ -315,4 +315,4 @@ function Chevron({ visibility, onAnimationEnd }) {
   )
 }
 
-export default Chevron
+export default BezRelz

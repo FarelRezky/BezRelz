@@ -20,7 +20,7 @@ function InteractiveBackground({
 }) {
   // settings
   const settings = useContext(SettingsContext)
-  const enableMarquee = settings.chevron.quickLook.marquee
+  const enableMarquee = settings.bezrelz.quickLook.marquee
 
   let marquee = null
   if (marqueeText && enableMarquee) {

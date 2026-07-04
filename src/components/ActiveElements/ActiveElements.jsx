@@ -1,6 +1,6 @@
 import { memo, useState } from 'react'
 import { useStateSelector } from '../../contexts/Store'
-import Chevron from '../Chevron/Chevron'
+import BezRelz from '../BezRelz/BezRelz'
 import QuickLook from '../QuickLook/QuickLook'
 
 const getElement = mode => {
@@ -8,7 +8,7 @@ const getElement = mode => {
     case null:
     case 'opened':
     case 'default':
-      return 'Chevron'
+      return 'BezRelz'
     case 'searching':
       return 'QuickLook'
     default: throw new Error('Unknown mode: ' + mode)
@@ -27,8 +27,8 @@ function ActiveElements() {
 
   return (
     <>
-      <Chevron
-        visibility={currentElement === 'Chevron'}
+      <BezRelz
+        visibility={currentElement === 'BezRelz'}
         onAnimationEnd={handleAnimationEnd}
         />
       <QuickLook

@@ -33,11 +33,11 @@ function QuickLook ({ visibility, onAnimationEnd }) {
   const theme = useContext(ThemeContext)
   
   const duration = settings.general.animationSpeed / 1000
-  const thickness = settings.chevron.thickness
-  const color = theme.chevron
-  const topCurvature = settings.chevron.quickLook.topCurvature
-  const bottomCurvature = settings.chevron.quickLook.bottomCurvature
-  const showMacrosLabel = settings.chevron.quickLook.showMacrosLabel
+  const thickness = settings.bezrelz.thickness
+  const color = theme.bezrelz
+  const topCurvature = settings.bezrelz.quickLook.topCurvature
+  const bottomCurvature = settings.bezrelz.quickLook.bottomCurvature
+  const showMacrosLabel = settings.bezrelz.quickLook.showMacrosLabel
   const notifyAboutForcedSearchEngine = settings.query.notifyAboutForcedSearchEngine
   
   /* store */

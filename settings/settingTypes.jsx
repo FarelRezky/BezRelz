@@ -260,7 +260,7 @@ export class Theme {
         path: '_parent_.secondary'
       },
       dependants: [
-        'chevron', 'query', 'suggestions', 'time'
+        'bezrelz', 'query', 'suggestions', 'time'
       ]
     },
     {
@@ -286,7 +286,7 @@ export class Theme {
       ]
     },
     {
-      name: 'chevron',
+      name: 'bezrelz',
       contrast: {
         name: 'background',
         isBackground: true,

@@ -1,4 +1,4 @@
-# Chevron [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE.md) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+# BezRelz [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE.md) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 <p align=center>
   <img width="80%" src="https://i.imgur.com/Wa7HcuW.png">
@@ -14,8 +14,8 @@
 
 <p align=center>
   <font size=4>
-    <a href="https://kholmogorov27.github.io/chevron/">Live Demo</a> | 
-    <a href="https://github.com/kholmogorov27/chevron/releases/latest">Download</a> |
+    <a href="https://FarelRezky.github.io/bezrelz/">Live Demo</a> | 
+    <a href="https://github.com/FarelRezky/bezrelz/releases/latest">Download</a> |
     <a href="#installation">Installation</a>
   </font>
 </p>
@@ -87,7 +87,7 @@ autosuggestions, history, macros and commands, macros menu, hotkeys, chatGPT int
 
 ## Installation
 
-You can set Chevron as the homepage (in the browser settings) or the new tab (you will need a custom tab extension).
+You can set BezRelz as the homepage (in the browser settings) or the new tab (you will need a custom tab extension).
 
 <a id="focus-problem"></a>
 
@@ -95,14 +95,14 @@ You can set Chevron as the homepage (in the browser settings) or the new tab (yo
 > If you want the app itself to be focused when opening a new tab and not the address bar,  
 > I recommend [this](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna) extension in tandem with the [hosted](#hosted) or [github pages](#github-pages) installation method for all chromium based browsers (_Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi etc_)
 
-There are a few ways to install Chevron:
+There are a few ways to install BezRelz:
 
 ### Static _<sup>(recommended)</sup>_
 
 > This method is **recommended** because it doesn't depend on your internet connection or any remote servers, and the UI will be loaded instantly.  
 > Some browser and extensions might have [the focus problem](#focus-problem)
 
-1. Download [the latest release](https://github.com/kholmogorov27/chevron/releases/latest)
+1. Download [the latest release](https://github.com/FarelRezky/bezrelz/releases/latest)
 1. Unzip the archive in any convenient place
 
 ### Hosted
@@ -161,7 +161,7 @@ There are a few ways to install Chevron:
 
    To uninstall the service, run the command again.
 
-After you register the server, you will be able to access Chevron on **_localhost:8000_**
+After you register the server, you will be able to access BezRelz on **_localhost:8000_**
 
 ### GitHub Pages
 
@@ -191,7 +191,7 @@ After building, you can find all the necessary files in the `/dist` folder
 
 ## Usage
 
-To use Chevron's main functionality, just type something (you don't need to worry about focus on the input field, it is always in focus at the right moment).
+To use BezRelz's main functionality, just type something (you don't need to worry about focus on the input field, it is always in focus at the right moment).
 
 As soon as you type something, the query will be parsed and suggestions will be given.
 

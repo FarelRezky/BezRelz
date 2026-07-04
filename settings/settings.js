@@ -7,7 +7,7 @@ for (const key in window.CONFIG.engines)
 const template = {
   general: {
     /* TODO
-      mode: new types.List('chevron', ['chevron', 'legacy']),
+      mode: new types.List('bezrelz', ['bezrelz', 'legacy']),
     */
     // from confing.engines (keys)
     searchEngine: new types.List('google', searchEngines),
@@ -24,7 +24,7 @@ const template = {
      * locale parameter is used by autocomplete engine and other components 
      */
     locale: new types.Input('en', '[language]-[COUNTRY]'),
-    tabTitle: new types.Input('Chevron'),
+    tabTitle: new types.Input('BezRelz'),
     // hidden
     redirectTarget: new types.Switch('_self', ['_self', '_blank'])
   },
@@ -37,7 +37,7 @@ const template = {
     // hidden; TODO: realistic
     style: new types.List('default', ['default'])
   },
-  chevron: {
+  bezrelz: {
     thickness: new types.Range(
       15,
       { min: 1, max: 50 }, 
@@ -130,8 +130,8 @@ const template = {
 const hidden = [
   'general.redirectTarget',
   'appearance.style',
-  'chevron.quickLook.topCurvature',
-  'chevron.quickLook.bottomCurvature'
+  'bezrelz.quickLook.topCurvature',
+  'bezrelz.quickLook.bottomCurvature'
 ]
 
 class Settings {
@@ -152,7 +152,7 @@ class Settings {
     const result = [...this._hidden]
     
     // hide advanced theme colors
-    const hiddenColors = ['chevron', 'query', 'suggestions', 'background', 'prefix', 'visited', 'time', 'card']
+    const hiddenColors = ['bezrelz', 'query', 'suggestions', 'background', 'prefix', 'visited', 'time', 'card']
     for (const theme of Object.keys(this.template.appearance.themes)) {
       // light theme
       hiddenColors.forEach(hC => result.push('appearance.themes.' + theme + '.light.' + hC))
